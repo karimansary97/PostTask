@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import UserCard from "./components/UserCard";
+import UserCard from "./Components/UserCard";
 
 function App() {
   return (

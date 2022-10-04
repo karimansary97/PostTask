@@ -1,38 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
 .App {
-  text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.UserCardContainer{
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  border:1px solid black;
+  border-radius:10px ;
+  width: 300px; 
+  background: #24283C;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SubHeader{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
 }
-
-.App-link {
-  color: #61dafb;
+.SubHeaderInfo  {
+  display: flex;
+  margin-top: 5px; 
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Name{
+  color:white;
+}
+.Email,.UserName {
+color: gray;
+margin-left: 2px;
+}
+.accountImage{
+width: 60px;
+height: 60px;
+display: flex;
+}
+.PostsButton{
+  align-self: flex-end;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
 }
