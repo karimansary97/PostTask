@@ -2,10 +2,13 @@ import React from "react";
 import UserCard from "../Components/UserCard";
 
 function Home() {
-    const array={}
+  const array = [1, 1, 1];
+  
   return (
     <div>
-      <UserCard />
+      {array.map((e) => (
+        <UserCard />
+      ))}
     </div>
   );
 }
