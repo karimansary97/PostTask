@@ -7,7 +7,7 @@ import End_Points from "../config/END_POINTS";
 
 function Home() {
   const { isLoading, error, data } = useQuery(
-    "repoData",
+    "usersData",
     async () => await apiClient.get(End_Points.Users)
   );
 
@@ -18,7 +18,7 @@ function Home() {
       {!isLoading && !error && (
         <div className="HomeCont">
           {data?.data.map((e) => (
-            <UserCard key={e.id} />
+            <UserCard key={e.id} userId={e.id} />
           ))}
         </div>
       )}

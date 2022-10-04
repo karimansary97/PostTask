@@ -1,5 +1,6 @@
 import React from "react";
 import account from "../assets/account.png";
+import { useNavigate } from "react-router-dom";
 /**
  * 
 Name.
@@ -11,7 +12,9 @@ Company name.
 Website as link opens the website in another tab.
 
  */
-function UserCard() {
+function UserCard({ userId }) {
+  console.log("🚀 ~ file: UserCard.js ~ line 16 ~ UserCard ~ id", userId);
+  const navigate = useNavigate();
   return (
     <div className="UserCardContainer">
       <div className="Header">
@@ -27,7 +30,12 @@ function UserCard() {
       <h6 className="Phone">Phone:01020603674</h6>
       <h6 className="Address">Address:cairo,Egypt</h6>
       <h6 className="Company">Company:Fixed Soluation</h6>
-      <button className="PostsButton">Posts</button>
+      <button
+        className="PostsButton"
+        onClick={() => navigate(`/userPosts/${userId}`)}
+      >
+        Posts
+      </button>
     </div>
   );
 }
