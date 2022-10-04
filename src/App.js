@@ -1,13 +1,16 @@
-import logo from "./logo.svg";
+import { QueryClient, QueryClientProvider } from "react-query";
+
 import "./App.css";
-import UserCard from "./Components/UserCard";
 import Home from "./Pages/Home";
 
 function App() {
+  const queryClient = new QueryClient();
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <Home />
+      </div>
+    </QueryClientProvider>
   );
 }
 

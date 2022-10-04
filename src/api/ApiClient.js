@@ -1,8 +1,8 @@
 import axios from "axios";
-import baseUrl from "./baseUrl";
+import { BaseURL } from "../config/BASE_URL";
 
-const APiClient = axios.create({
-  baseURL: baseUrl,
+const apiClient = axios.create({
+  baseURL: BaseURL,
 });
 
-export default APiClient;
+export default apiClient;
