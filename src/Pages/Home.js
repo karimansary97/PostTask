@@ -12,11 +12,17 @@ function Home() {
   );
 
   return (
-    <div>
-      {data?.data.map((e) => (
-        <UserCard key={e.id} />
-      ))}
-    </div>
+    <>
+      {isLoading && <div>Loading...</div>}
+      {!isLoading && error && <div>{error.message}</div>}
+      {!isLoading && !error && (
+        <div className="HomeCont">
+          {data?.data.map((e) => (
+            <UserCard key={e.id} />
+          ))}
+        </div>
+      )}
+    </>
   );
 }
 

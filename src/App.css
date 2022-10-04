@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing:border-box;
 }
-.App {
 
-}
+/*
+--------------------------------------------------------------CardStyle--------------------------------------------------
+*/
 
 .UserCardContainer{
   display: flex;
@@ -51,4 +52,26 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 50%;
+}
+
+/*
+--------------------------------------------------------------Home--------------------------------------------------
+*/
+
+.HomeCont {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+@media screen and (max-width:1024px) {
+  .HomeCont {
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+@media screen and (max-width:680px) {
+  .HomeCont {
+    grid-template-columns: 1fr
+  }
+  
 }
