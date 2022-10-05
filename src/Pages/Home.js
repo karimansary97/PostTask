@@ -17,8 +17,8 @@ function Home() {
       {!isLoading && error && <div>{error.message}</div>}
       {!isLoading && !error && (
         <div className="HomeCont">
-          {data?.data.map((e) => (
-            <UserCard key={e.id} userId={e.id} />
+          {data?.data.map((user) => (
+            <UserCard key={user.id} userId={user.id} user={user} />
           ))}
         </div>
       )}

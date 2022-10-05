@@ -3,20 +3,25 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import END_POINTS from "../config/END_POINTS";
 import apiClient from "../api/ApiClient";
+import PostCard from "../Components/PostCard/PostCard";
 
 function UserPosts() {
   const { id } = useParams();
 
   const { isLoading, error, data } = useQuery(
     "usersPosts",
-    async () => await apiClient.get(`${END_POINTS.Posts}/${id}`)
+    async () => await apiClient.get(END_POINTS.Posts)
   );
 
-  console.log(data);
+  const FilterData = data?.data.filter((post) => post?.userId == +id);
+
   return (
-    <>
-      <h1>sssssssss</h1>
-    </>
+    <div style={{ padding: 80 }}>
+      {FilterData?.map((post) => (
+        <PostCard key={post.id} post={post} />
+      ))}
+      {/* <PostCard /> */}
+    </div>
   );
 }
 
