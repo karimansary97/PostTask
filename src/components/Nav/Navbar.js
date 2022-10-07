@@ -19,7 +19,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/PostTask"
-              className={location.pathname === "/" ? Styles.active : ""}
+              className={location.pathname === "/PostTask" ? Styles.active : ""}
             >
               Home
             </NavLink>
