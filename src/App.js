@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/PostTask" element={<Home />} />
           <Route path="/userPosts/:id" element={<UserPosts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
