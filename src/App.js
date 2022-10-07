@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import NotFound from "./Pages/NotFound";
 import Navbar from "./Components/Nav/Navbar";
-import UserPosts from "./Pages/UserPosts";
+import UserPosts from "./Pages/UserPosts/UserPosts";
 
 function App() {
   const queryClient = new QueryClient();

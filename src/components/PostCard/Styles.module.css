@@ -1,5 +1,5 @@
 .Card {
-  background: white;
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +14,14 @@
   transition: height 1000ms;
   width: 500px;
 }
+
+.Card:hover{
+  transform: scale(1.08);
+  box-shadow: 1px 1px  4px #70b0f0,-0.1em 0 0.2em #e56a8d;
+}
+
 .ExpandCard {
-  background: white;
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +35,8 @@
   text-align: center;
   transition: height 1000ms;
   width: 500px;
+  transform: scale(1.08);
+  box-shadow: 1px 1px  4px #70b0f0,-0.1em 0 0.2em #e56a8d;
 }
 .Arrow{
   transition:1500ms;

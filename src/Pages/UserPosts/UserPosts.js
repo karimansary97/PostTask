@@ -1,11 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
-import END_POINTS from "../config/END_POINTS";
-import apiClient from "../api/ApiClient";
-import PostCard from "../Components/PostCard/PostCard";
+import END_POINTS from "../../config/END_POINTS";
+import apiClient from "../../api/ApiClient";
+import PostCard from "../../Components/PostCard/PostCard";
 
-function UserPosts() {
+import Styles from "./Styles.module.css";
+
+const UserPosts = () => {
   const { id } = useParams();
 
   const { isLoading, error, data } = useQuery(
@@ -16,13 +18,12 @@ function UserPosts() {
   const FilterData = data?.data.filter((post) => post?.userId == +id);
 
   return (
-    <div style={{ padding: 80 }}>
+    <div className={Styles.Cont}>
       {FilterData?.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
-      {/* <PostCard /> */}
     </div>
   );
-}
+};
 
 export default UserPosts;
