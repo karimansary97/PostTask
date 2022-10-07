@@ -18,11 +18,23 @@ const UserPosts = () => {
   const FilterData = data?.data.filter((post) => post?.userId == +id);
 
   return (
-    <div className={Styles.Cont}>
-      {FilterData?.map((post) => (
-        <PostCard key={post.id} post={post} />
-      ))}
-    </div>
+    <>
+      {isLoading && (
+        <div className={Styles.Loading}>
+          <h2>Loading...</h2>
+        </div>
+      )}
+      {!isLoading && error && (
+        <div className={Styles.Loading}>
+          <h2>{error.message}</h2>
+        </div>
+      )}
+      <div className={Styles.Cont}>
+        {FilterData?.map((post) => (
+          <PostCard key={post.id} post={post} />
+        ))}
+      </div>
+    </>
   );
 };
 
