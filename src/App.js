@@ -5,7 +5,7 @@ import "./App.css";
 
 import Home from "./Pages/Home/Home";
 import NotFound from "./Pages/NotFound";
-import Navbar from "./Components/Nav/Navbar";
+import Navbar from "./Components/nav/Navbar";
 import UserPosts from "./Pages/UserPosts/UserPosts";
 
 function App() {
