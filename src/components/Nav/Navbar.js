@@ -18,7 +18,7 @@ const Navbar = () => {
         <ul className={DropDown ? Styles.nav_list : Styles.nav_list_None}>
           <li>
             <NavLink
-              to="/"
+              to="/PostTask"
               className={location.pathname === "/" ? Styles.active : ""}
             >
               Home
