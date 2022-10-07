@@ -1,0 +1,33 @@
+
+.HomeCont {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-around;
+    padding-top: 6rem;
+  
+  }
+  
+  @media screen and (max-width:1024px) {
+    .HomeCont {
+      grid-template-columns: repeat(2,auto);
+    
+    }
+    
+  }
+  @media screen and (max-width:680px) {
+    .HomeCont {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+    
+  }
+  
+  .Loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #842e46);
+ 
+  }

@@ -1,0 +1,82 @@
+
+.UserCardContainer{
+  display: flex;
+  margin: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px  2px;
+  border-radius:10px ;
+  width: 280px; 
+  padding: 10px;
+  height: 350px;
+}
+.UserCardContainer:hover{
+  transform: scale(1.08);
+  box-shadow: 1px 1px  4px #70b0f0,-0.1em 0 0.2em #e56a8d;
+}
+.Header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.SubHeader{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.SubHeaderInfo  {
+  display: flex;
+  margin-top: 0.2rem; 
+}
+.SubCont{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+}
+.Name{
+  color:white;
+  font-size: larger;
+}
+.Email,.UserName {
+color: gray;
+margin-left: 0.2rem;
+text-align: center;
+}
+.AccountImage{
+width: 100px;
+height: 100px;
+display: flex;
+}
+.PostsButton {
+display: flex;
+align-items: center;
+justify-content: center;
+border: 0px solid;
+border-radius: 10px;
+box-shadow: 1px 1px 2px black;
+padding: 8px;
+width: 50%;
+background-color: transparent;
+font-weight: 600;
+color: white;
+}
+.PostsButton:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 1px 1px  4px #e56a8d,-0.1em 0 0.2em #70b0f0;
+}
+
+.Phone,.Address,.Company{
+  text-align: center;
+  color: white;
+  margin-left: 5px;
+}
+.IconText{
+  display: flex;
+  align-items: center;
+}
+
