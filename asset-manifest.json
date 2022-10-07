@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PostTask/static/css/main.0033e0af.css",
+    "main.js": "/PostTask/static/js/main.37aee87f.js",
+    "static/media/account.png": "/PostTask/static/media/account.a952913a7a42e036aa49.png",
+    "index.html": "/PostTask/index.html",
+    "main.0033e0af.css.map": "/PostTask/static/css/main.0033e0af.css.map",
+    "main.37aee87f.js.map": "/PostTask/static/js/main.37aee87f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0033e0af.css",
+    "static/js/main.37aee87f.js"
+  ]
+}
