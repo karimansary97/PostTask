@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className={Styles.navbar}>
       <div>
-        <h1>PostsTask</h1>
+        <h1>Fixed Solution</h1>
       </div>
       <div className={Styles.link_Nav}>
         <ul className={DropDown ? Styles.nav_list : Styles.nav_list_None}>

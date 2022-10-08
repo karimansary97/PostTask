@@ -1,5 +1,5 @@
 .navbar {
-    background-color: black;
+    background-color:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,13 +12,20 @@
   }
   
   .navbar h1 {
-    color: white;
+    color: rgb(255, 255, 255);
+    
   }
 
   .nav_list li a,
   .nav_list_None li a {
     display: block;
     color: gray;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+  }
+    .nav_list_None li a:hover {
+  text-shadow:4px 4px  4px #5d9afc;
   }
   .nav_list .active,
   .nav_list_None .active {

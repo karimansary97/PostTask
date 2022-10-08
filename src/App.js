@@ -5,6 +5,7 @@ import "./App.css";
 
 import Home from "./Pages/Home/Home";
 import NotFound from "./Pages/NotFound";
+import Navbar from "./Components/nav/Navbar";
 import UserPosts from "./Pages/UserPosts/UserPosts";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           <Route path="/PostTask" element={<Home />} />
           <Route path="/userPosts/:id" element={<UserPosts />} />

@@ -33,24 +33,24 @@ const UserCard = ({ userId, user }) => {
       </div>
       <div className={Styles.SubCont}>
         <div className={Styles.IconText}>
-          <AiFillPhone size={20} color={"#70b0f0"} />
+          <AiFillPhone size={20} color={"#5d9afc"} />
           <h6 className={Styles.Phone}>
             <span></span>
             {user?.phone.split(" ")[0]}
           </h6>
         </div>
         <div className={Styles.IconText}>
-          <MdLocationOn size={20} color={"#70b0f0"} />
+          <MdLocationOn size={20} color={"#5d9afc"} />
           <h6 className={Styles.Phone}>
             {user?.address.street},{user?.address.city}
           </h6>
         </div>
         <div className={Styles.IconText}>
-          <BiBuildings size={20} color={"#70b0f0"} />
+          <BiBuildings size={20} color={"#5d9afc"} />
           <h6 className={Styles.Phone}>{user?.company?.name}</h6>
         </div>
         <div className={Styles.IconText}>
-          <BiWorld size={20} color={"#70b0f0"} />
+          <BiWorld size={20} color={"#5d9afc"} />
           <a
             href={`https://${user?.website}`}
             target="_blank"

@@ -17,6 +17,7 @@ const PostCard = ({ post }) => {
       <AiOutlineArrowDown
         className={DropDown == true ? Styles.ArrowExpand : Styles.Arrow}
         size={25}
+        color={"#5d9afc"}
         onClick={() => setDropDown((prevState) => !prevState)}
       />
 

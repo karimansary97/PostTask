@@ -5,19 +5,19 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 4px #5d9afc;
   cursor: pointer;
   height: 100px;
   margin: 20px;
   padding: 0 20px;
   text-align: center;
-  transition: height 1000ms;
+  transition: height 2S;
   width: 500px;
 }
 
 .Card:hover{
+  transition: 0.6s;
   transform: scale(1.08);
-  box-shadow: 1px 1px  4px #70b0f0,-0.1em 0 0.2em #e56a8d;
 }
 
 .ExpandCard {
@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 4px #5d9afc;
   cursor: pointer;
   height: 200px;
   margin: 20px;
@@ -36,7 +36,7 @@
   transition: height 1000ms;
   width: 500px;
   transform: scale(1.08);
-  box-shadow: 1px 1px  4px #70b0f0,-0.1em 0 0.2em #e56a8d;
+
 }
 .Arrow{
   transition:1500ms;
@@ -44,6 +44,8 @@
 
 .Title{
   font-size: larger;
+  color: aliceblue;
+  margin-top: 0.5rem;
 }
 .ArrowExpand{
 transition: 1500ms ;
@@ -53,6 +55,7 @@ transform: rotate(180deg);
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.60s, opacity 0.60s linear;
+  color: gray;
 
 }
 .DesExpand{
@@ -60,6 +63,7 @@ transform: rotate(180deg);
   opacity: 1;
   transition: visibility 0.60s linear 0.60s, opacity 0.60s linear;
   transition-delay: 0s;
+  color: gray;
 }
 
 
