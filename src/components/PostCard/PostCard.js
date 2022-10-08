@@ -9,9 +9,7 @@ const PostCard = ({ post }) => {
       <h1 className={Styles.Title}>{post?.title}</h1>
 
       <h6 className={DropDown == true ? Styles.DesExpand : Styles.Des}>
-        laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo
-        necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente
-        accusantium
+        {post?.body}
       </h6>
 
       <AiOutlineArrowDown
