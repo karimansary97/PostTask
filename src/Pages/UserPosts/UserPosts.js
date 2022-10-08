@@ -21,12 +21,12 @@ const UserPosts = () => {
     <>
       {isLoading && (
         <div className={Styles.Loading}>
-          <h2>Loading...</h2>
+          <h2 className={Styles.Text}>Loading...</h2>
         </div>
       )}
       {!isLoading && error && (
         <div className={Styles.Loading}>
-          <h2>{error.message}</h2>
+          <h2 className={Styles.Text}>{error.message}</h2>
         </div>
       )}
       <div className={Styles.Cont}>
