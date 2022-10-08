@@ -28,6 +28,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #355c7d, #6c5b7b, #842e46);
+    background: linear-gradient(to bottom,#050608,#1E2835, #050608); 
  
+  }
+  .Text{
+    color: aliceblues;
   }
